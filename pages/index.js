@@ -1,209 +1,140 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Script from 'next/script';
 
 export default function Home() {
   return (
-    <div className="container">
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Portal do CAES do IFAM-CMZL</title>
       </Head>
 
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <div>
+        <div>
+          <div>
+            <nav>
+              <a class="site-title">
+                <span class="site-subtitle">
+                  Centro Academico - Engenharia de Software - IFAM Campus Manaus Zona Leste
+                </span>
+              </a>
+            </nav>
+          </div>
         </div>
-      </main>
+      </div>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a>
-      </footer>
+      <div>
+        <div>
+          <div>
+            <div>
+              <article>
+                <div>
+                  <header>
+                    <h1 id="page-title" class="page_title" itemprop="headline">
+                      Portal do CAES-IFAM-CMZL
+                    </h1>
+                  </header>
 
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+                  <section>
 
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+                    <p>
+                      A nossa chapa tem objetivos bem simples e definidos:<br />
+                      (I) - Atender as principais demandas das turmas de Engenharia<br />
+                      (II) - Prover as melhorias das atividades acadêmicas<br />
+                      (III) - Fomentar maior participação dos discentes na vida acadêmica<br />
+                    </p>
 
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+                    <img src="https://raw.githubusercontent.com/CarlosViniMSouza/CarlosViniMSouza/main/images/Others/img-chapa-completa.jpg" alt="caes-ifam-cmzl2022" />
 
-        footer img {
-          margin-left: 0.5rem;
-        }
+                    <p>
+                      O CAES-IFAM-CMZL elaborou propostas dentro da realidade vivida pelos alunos e que contemplam nossos
+                      interesses frente ao Instituto. Assim, estruturamos nossa gestão buscando contemplar as áreas de
+                      Tecnologia, Finanças, Eventos, Comunicação e Cultura e Lazer.
+                    </p>
 
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+                    <h4 id="area-de-tecnologia">Na area de Tecnologia:
+                    </h4>
+                    <ul>
+                      <li>
+                        Fiscalizar e colaborar na reformulação do PPC do curso, auxiliando a
+                        coordenação e representando os discentes de forma ativa e responsiva;
+                      </li>
 
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
+                      <li>
+                        Atualizar o estatuto do Centro Acadêmico;
+                      </li>
 
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
+                      <li>
+                        Incentivar estudante a adentrarem atividades de pesquisa e extensão por
+                        meio de conexões com professores através de áreas de interesse em comum, bem como a participação
+                        em eventos extracurriculares: hackathons, summer jobs, workshops, code jamms, competições, etc.
+                      </li>
+                    </ul>
 
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
+                    <h4 id="area-de-financas">Na area de Financas:
+                    </h4>
+                    <ul>
+                      <li>
+                        Prestar Contas das doações e custos do C.A.</li>
 
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
+                      <li>
+                        Prover eventos que possibilitem arrecadar fundos á organização de
+                        eventos, melhorias no ambiente do centro acadêmico e eventuais gastos. Dentre as atividades
+                        propostas, estão: organização de cantinas, vaquinhas colaborativas, solicitar recursos junto à Lei
+                        da Informática da ZFM, etc.
+                      </li>
+                    </ul>
 
-        .title,
-        .description {
-          text-align: center;
-        }
+                    <h4 id="area-de-comunicacao">Na area de Comunicação:</h4>
+                    <ul>
+                      <li>
+                        Articular parceiras com outros Centros Acadêmicos do IFAM para realização
+                        de atividades conjuntas e cobrança de interesses estudantis, como sobre os serviços prestados pelo
+                        Instituto;
+                      </li>
 
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
+                      <li>
+                        Divulgar informes com mais frequência em diversos canais de comunicação
+                        (Instagram, WhatsApp, Facebook e Twitter) sobre os processos e articulações do nosso C.A.;
+                      </li>
 
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
+                      <li>
+                        Participar ativamente em redes sociais, compartilhando todas as
+                        realizações relevantes do CAES-IFAM-CMZL;
+                      </li>
 
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
+                      <li>
+                        Divulgar vagas de estágio com empresas interessadas nos
+                        alunos do curso (e de possíveis vagas que possam ser de interesse dos estudantes).</li>
+                    </ul>
 
-          max-width: 800px;
-          margin-top: 3rem;
-        }
+                  </section>
+                </div>
+              </article>
+            </div>
 
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
+            <div id="footer" class="page_footer">
+              <footer>
+                <div>
+                  <ul class="social-medias">
+                    <h4>Nos Acompanhe nas Redes:</h4>
+                    <li><a href="https://twitter.com/caes_ifam_cmzl"> Twitter </a></li>
+                    <li><a href="https://facebook.com/caes_ifam_cmzl"> Facebook </a></li>
+                    <li><a href="https://instagram.com/caes_ifam_cmzl"> Instagram </a></li>
+                    <li><a href="https://github.com/caes-ifam-cmzl"> GitHub </a></li>
+                  </ul>
+                </div>
 
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
+                <div class="page_footer-copyright">&copy; @CarlosViniMSouza - Desenvolvido com NextJS</div>
 
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
+      <Script
+        src="https://kit.fontawesome.com/4eee35f757.js" />
 
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+    </>
   )
 }
