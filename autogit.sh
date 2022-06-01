@@ -1,4 +1,4 @@
 git add -A
-git commit -m "CSS -> alt (part1)"
+git commit -m "Reformulando o Projeto (estruturalmente)"
 git push -u origin main
 git status

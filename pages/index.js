@@ -1,7 +1,5 @@
 import Head from 'next/head';
 import Script from 'next/script';
-import Navbar from './navbar';
-import Footer from './footer';
 
 export default function Home() {
   return (
@@ -10,35 +8,29 @@ export default function Home() {
         <title>Portal do CAES do IFAM-CMZL</title>
       </Head>
 
-      <Navbar />
-      <main>{children}</main>
-      <Footer />
-
       <header>
         <h2 id="page-title" class="page_title" itemprop="headline">
           Centro Academico - Engenharia de Software - IFAM Campus Zona Leste
         </h2>
       </header>
 
+      <p>
+        A nossa chapa tem objetivos bem simples e definidos:<br /><br />
+        1 - Atender as principais demandas das turmas de Engenharia.<br />
+        2 - Prover as melhorias das atividades acadêmicas.<br />
+        3 - Fomentar maior participação dos discentes na vida acadêmica.<br />
+      </p>
+
+      <img src="https://raw.githubusercontent.com/CarlosViniMSouza/CarlosViniMSouza/main/public/images/Others/img-chapa-completa.jpg" alt="caes-ifam-cmzl2022" />
+
+      <p>
+        O CAES-IFAM-CMZL elaborou propostas dentro da realidade vivida pelos alunos e que contemplam nossos
+        interesses frente ao Instituto. Assim, estruturamos nossa gestão buscando contemplar as áreas de
+        Tecnologia, Finanças, Eventos, Comunicação e Cultura e Lazer.
+      </p>
+
       <section>
-
-        <p>
-          A nossa chapa tem objetivos bem simples e definidos:<br /><br />
-          (I) - Atender as principais demandas das turmas de Engenharia<br />
-          (II) - Prover as melhorias das atividades acadêmicas<br />
-          (III) - Fomentar maior participação dos discentes na vida acadêmica<br />
-        </p>
-
-        <img src="https://raw.githubusercontent.com/CarlosViniMSouza/CarlosViniMSouza/main/images/Others/img-chapa-completa.jpg" alt="caes-ifam-cmzl2022" />
-
-        <p>
-          O CAES-IFAM-CMZL elaborou propostas dentro da realidade vivida pelos alunos e que contemplam nossos
-          interesses frente ao Instituto. Assim, estruturamos nossa gestão buscando contemplar as áreas de
-          Tecnologia, Finanças, Eventos, Comunicação e Cultura e Lazer.
-        </p>
-
-        <h4 id="area-de-tecnologia">Na area de Tecnologia:
-        </h4>
+        <h4 id="area-de-tecnologia"> Na area de Tecnologia: </h4>
         <ul>
           <li>
             Fiscalizar e colaborar na reformulação do PPC do curso, auxiliando a
@@ -56,8 +48,7 @@ export default function Home() {
           </li>
         </ul>
 
-        <h4 id="area-de-financas">Na area de Financas:
-        </h4>
+        <h4 id="area-de-financas"> Na area de Financas: </h4>
         <ul>
           <li>
             Prestar Contas das doações e custos do C.A.</li>
@@ -70,7 +61,7 @@ export default function Home() {
           </li>
         </ul>
 
-        <h4 id="area-de-comunicacao">Na area de Comunicação:</h4>
+        <h4 id="area-de-comunicacao"> Na area de Comunicação: </h4>
         <ul>
           <li>
             Articular parceiras com outros Centros Acadêmicos do IFAM para realização
@@ -92,21 +83,16 @@ export default function Home() {
             Divulgar vagas de estágio com empresas interessadas nos
             alunos do curso (e de possíveis vagas que possam ser de interesse dos estudantes).</li>
         </ul>
-
       </section>
 
-      <div id="footer" class="page_footer">
-        <footer>
-          <div>
-            <ul class="social-medias">
-              <h4>Nos Acompanhe nas Redes:</h4>
-              <li><a href="https://twitter.com/caes_ifam_cmzl"> Twitter </a></li>
-              <li><a href="https://facebook.com/caes_ifam_cmzl"> Facebook </a></li>
-              <li><a href="https://instagram.com/caes_ifam_cmzl"> Instagram </a></li>
-              <li><a href="https://github.com/caes-ifam-cmzl"> GitHub </a></li>
-            </ul>
-          </div>
-        </footer>
+      <div>
+        <h4>Nos Acompanhe nas Redes:</h4>
+        <ul class="social-medias">
+          <li><a href="https://twitter.com/caes_ifam_cmzl"> Twitter </a></li>
+          <li><a href="https://facebook.com/caes_ifam_cmzl"> Facebook </a></li>
+          <li><a href="https://instagram.com/caes_ifam_cmzl"> Instagram </a></li>
+          <li><a href="https://github.com/caes-ifam-cmzl"> GitHub </a></li>
+        </ul>
       </div>
 
       <div>&copy; @CarlosViniMSouza - Desenvolvido com NextJS</div>
