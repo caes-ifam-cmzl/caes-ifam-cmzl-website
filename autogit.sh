@@ -1,4 +1,4 @@
 git add -A
-git commit -m "[id].js -> ok"
+git commit -m "post-test.md -> alt"
 git push -u origin main
 git status
