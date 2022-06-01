@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Script from 'next/script';
+import Navbar from './navbar';
+import Footer from './footer';
 
 export default function Home() {
   return (
@@ -7,6 +9,10 @@ export default function Home() {
       <Head>
         <title>Portal do CAES do IFAM-CMZL</title>
       </Head>
+
+      <Navbar />
+      <main>{children}</main>
+      <Footer />
 
       <header>
         <h2 id="page-title" class="page_title" itemprop="headline">
