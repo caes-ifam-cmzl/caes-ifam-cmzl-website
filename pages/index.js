@@ -1,11 +1,29 @@
 import Head from 'next/head';
 import Script from 'next/script';
+import { getSortedPostsData } from '../lib/posts'
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Portal do CAES do IFAM-CMZL</title>
+        <link rel="icon" href='/favicon.ico' />
+        <meta charset="utf-8" />
+        <meta name="description" content="Pagina institucional do CAES-IFAM-CMZL" />
+        <meta name="author" content="CAES-IFAM-CMZL" />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="pt-BR" />
+        <meta property="og:site_name" content="CAES-IFAM-CMZL" />
+        <meta property="og:title" content="Gestao 2022 do CAES-IFAM-CMZL" />
+        <meta property="og:url" content="https://caes-ifam-cmzl.vercel.app/" />
+        <meta property="og:description" content="Pagina institucional do CAES-IFAM-CMZL" />
+        <meta name="twitter:site" content="@CAES_IFAM_CMZL" />
+        <meta name="twitter:title" content="Gestao 2022 do CAES-IFAM-CMZL" />
+        <meta name="twitter:description" content="Pagina institucional do CAES-IFAM-CMZL" />
+        <meta name="twitter:url" content="https://caes-ifam-cmzl.github.io/" />
+        <meta name="twitter:card" content="summary" />
+        <meta property="article:published_time" content="2022-05-26T00:00:00-04:00" />
+        <link rel="canonical" href="https://caes-ifam-cmzl.vercel.app/"></link>
       </Head>
 
       <header>
@@ -21,7 +39,7 @@ export default function Home() {
         3 - Fomentar maior participação dos discentes na vida acadêmica.<br />
       </p>
 
-      <img src="https://raw.githubusercontent.com/CarlosViniMSouza/CarlosViniMSouza/main/public/images/Others/img-chapa-completa.jpg" alt="caes-ifam-cmzl2022" />
+      <img src="https://github.com/caes-ifam-cmzl/caes-ifam-cmzl-website/blob/main/public/images/img-chapa-completa.jpg" alt="caes-ifam-cmzl2022" />
 
       <p>
         O CAES-IFAM-CMZL elaborou propostas dentro da realidade vivida pelos alunos e que contemplam nossos
@@ -102,4 +120,13 @@ export default function Home() {
 
     </>
   )
+}
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
 }
