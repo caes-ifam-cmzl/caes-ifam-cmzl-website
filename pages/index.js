@@ -42,7 +42,7 @@ export default function Home({ allPostsData }) {
         3 - Fomentar maior participação dos discentes na vida acadêmica.<br />
       </p>
 
-      <img src="https://github.com/caes-ifam-cmzl/caes-ifam-cmzl-website/blob/main/public/images/img-chapa-completa.jpg" alt="caes-ifam-cmzl2022" />
+      <img src="https://raw.githubusercontent.com/caes-ifam-cmzl/caes-ifam-cmzl-website/main/public/images/img-chapa-completa.jpg" alt="caes-ifam-cmzl2022" />
 
       <p>
         O CAES-IFAM-CMZL elaborou propostas dentro da realidade vivida pelos alunos e que contemplam nossos
