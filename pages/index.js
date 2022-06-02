@@ -1,10 +1,11 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Script from 'next/script'
 import Date from '../components/date'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 
-export default function Home() {
+export default function Home({ allPostsData }) {
   return (
     <>
       <Head>
