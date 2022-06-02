@@ -1,5 +1,7 @@
-import Head from 'next/head';
-import Script from 'next/script';
+import Head from 'next/head'
+import Script from 'next/script'
+import Date from '../components/date'
+import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 
 export default function Home() {
@@ -112,6 +114,18 @@ export default function Home() {
           <li><a href="https://github.com/caes-ifam-cmzl"> GitHub </a></li>
         </ul>
       </div>
+
+      {allPostsData.map(({ id, date, title }) => (
+        <li className={utilStyles.listItem} key={id}>
+          <Link href={`/posts/${id}`}>
+            <a>{title}</a>
+          </Link>
+          <br />
+          <small className={utilStyles.lightText}>
+            <Date dateString={date} />
+          </small>
+        </li>
+      ))}
 
       <div>&copy; @CarlosViniMSouza - Desenvolvido com NextJS</div>
 

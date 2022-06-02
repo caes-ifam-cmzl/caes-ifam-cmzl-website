@@ -7,8 +7,8 @@ export default function Layout() {
       <Head>
         <link rel="icon" href='/favicon.ico' />
       </Head>
+
+      <header className={styles.header}></header>
     </div>
   )
 }
-
-// Study more about Layouts in NextJS
